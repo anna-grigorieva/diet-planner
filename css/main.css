@@ -1,0 +1,153 @@
+﻿html, body, .container {
+    height: 100%;
+}
+body {
+    background-color: #806b6b;
+    color: rgb(34, 65, 61);
+}
+
+
+.daily-ration.affix {
+    top: 20px;
+    width: 30%;
+}
+.filter.affix {
+    top: 20px;
+    width: 15%;
+}
+@media (max-width: 768px) {
+    .affix { position: static; }
+    .daily-ration.affix { width: initial; }
+    .filter.affix { width: initial; }
+    .col-sm-6 { padding: 0; }
+}
+
+.container {
+    width: 90%;
+    padding: 0;
+    margin: 0 auto;
+}
+.col-sm-2, .col-sm-4 {
+    height: 100%;
+    padding: 0;
+}
+.filter, .daily-ration {
+    height: 90%;
+    overflow: auto;
+    background-color: whitesmoke;
+    font-size: 13px;
+    padding: 0;
+    margin: 0;
+}
+
+input, select {
+    width: 100%;
+    margin: 0;
+}
+.form-control[disabled] {
+    cursor: initial;
+}
+hr {
+    margin: 10px;
+}
+.image {
+    display: block;
+    width: 37%;
+    margin-right: 3%;
+    float: left;
+}
+.title {
+    text-align: center;
+    background-color: rgb(59, 153, 142);
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+    margin: 10px 0;
+}
+.title img {
+        width: 5%;
+        margin: 0 20px;
+    }
+.label.nutritients {
+    background-color: #fc7d6e;
+    text-align: justify;
+}
+.daily-ration .label {
+    background-color: rgba(128, 107, 107, 0.5);
+}
+.excluded-ingredient {
+    background-color: #806b6b;
+    margin-right: 3px;
+}
+.x {
+    color: #aa9c9c;
+    cursor: pointer;
+    font-size: 12px;
+}
+.x:hover {
+    font-weight: bold;
+    color: #f54949;
+}
+.dishes li {
+    background-color: whitesmoke;
+}
+.table {
+    table-layout: fixed;
+}
+
+#nutr-constraints {
+    font-size: 12px;
+}
+#nutr-constraints input {
+    text-align: center;
+}
+#nutr-constraints td {
+    padding: 2px;
+}
+#nutr-constraints th {
+    text-align: center;
+}
+
+.daily-nutr {
+    width: 50%;
+    float: right;
+}
+.daily-nutr th, td:not(:first-child) {
+    text-align: center;
+}
+.day-info {
+    padding-top: 10px;
+}
+#datepicker {
+    width: 50%;
+    padding: 0 5px;
+    height: 25px;
+}
+.panel-heading button {
+    margin-left: 4px;
+    height: 25px;
+}
+.print {
+    background-color: whitesmoke;
+    border: none;
+    background-image: url(images/icon_print.png);
+    height: 29px;
+    width: 36px;
+    float: right;
+    padding: 2px 0;
+}
+.back-to-top {
+    position: fixed;
+    display: none;
+    bottom: 20px;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(59, 153, 142, 0.85);
+}
+.back-to-top:hover {
+        text-decoration: none;
+        color: white;
+        background-color: rgb(59, 153, 142);
+    }
